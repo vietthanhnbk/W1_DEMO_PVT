@@ -10,11 +10,11 @@ node{
     }
 
     stage('build') {
-        echo "Hi"
-		echo "Hello"
+        echo "build"
+
     }
     stage('run') {
-        echo "Hi"
-		echo "Hello"
+        echo "run"
+
     }
 }
