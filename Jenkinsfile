@@ -1,12 +1,12 @@
 node{
-	properties([pipelineTriggers([cron('* * * * *')])])
+	properties([pipelineTriggers([pollSCM('* * * * *')])])
 
     stage('build') {
         echo "build"
 
     }
     stage('run') {
-        echo "run run run run run"
+        echo "run again"
 
     }
 }
