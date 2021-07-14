@@ -1,9 +1,15 @@
-node {
-    stage("Build") {
-        echo "Some code compilation here..."
+node('main') {
+    stage('scm') {
+        checkout([$class: 'GitSCM', 
+          branches: [[name: '*/main']], 
+          doGenerateSubmoduleConfigurations: false, 
+          extensions: [], 
+          submoduleCfg: [], 
+          userRemoteConfigs: [[credentialsId: 'github_account', 
+          url: 'https://github.com/vietthanhnbk/W1_DEMO_PVT.git']]])
     }
 
-    stage("Test") {
-        echo "Some tests execution here..."
+    stage('build') {
+        echo "Hi"
     }
 }

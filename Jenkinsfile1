@@ -1,0 +1,10 @@
+node {
+    stage("Build") {
+        echo "Some code compilation here..."
+    }
+
+    stage("Test") {
+        echo "Some tests execution here..."
+		sleep 30
+    }
+}
