@@ -7,6 +7,6 @@ node{
     }
     stage('run') {
         echo "run again and again and again"
-
+	echo "hello"
     }
 }
