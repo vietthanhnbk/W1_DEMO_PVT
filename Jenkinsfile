@@ -14,7 +14,7 @@ node{
 
     }
     stage('run') {
-        echo "run run"
+        echo "run run run"
 
     }
 }
