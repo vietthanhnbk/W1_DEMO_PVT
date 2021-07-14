@@ -1,6 +1,6 @@
 node{
-	properties([pipelineTriggers([pollSCM('* * * * *')])])
-
+	//properties([pipelineTriggers([pollSCM('* * * * *')])])
+	checkout scm
     stage('build') {
         echo "build"
 
