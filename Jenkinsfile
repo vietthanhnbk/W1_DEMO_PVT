@@ -5,6 +5,5 @@ node {
 
     stage("Test") {
         echo "Some tests execution here..."
-        echo 1
     }
 }
